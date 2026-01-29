@@ -1,0 +1,89 @@
+/* Default Light Theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f3f3f3;
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+  --subtitle-color: silver;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+  --subtitle-color: #b0b0b0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#themeToggle {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.subtitle {
+  color: var(--subtitle-color);
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.github-btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.learn-btn {
+  margin-left: 10px;
+  padding: 12px 20px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 80px 40px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
